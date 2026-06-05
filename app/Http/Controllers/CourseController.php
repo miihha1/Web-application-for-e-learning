@@ -251,7 +251,7 @@ class CourseController extends Controller
             'cover_image_path' => $coverImagePath,
         ]);
 
-        return redirect()->route('courses.show', $course);
+        return redirect()->route('teacher.courses.manage', $course);
     }
 
     public function enroll(Request $request, Course $course)
