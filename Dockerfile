@@ -7,11 +7,13 @@ RUN composer install --no-dev --no-interaction --prefer-dist --optimize-autoload
 COPY . .
 RUN composer dump-autoload --optimize && php artisan package:discover --ansi
 
-FROM node:22 AS assets
+FROM php:8.4-cli AS assets
 WORKDIR /app
 
 RUN apt-get update && apt-get install -y \
-    php-cli php-mbstring php-xml php-curl php-zip php-sqlite3 \
+    ca-certificates curl gnupg \
+    && curl -fsSL https://deb.nodesource.com/setup_22.x | bash - \
+    && apt-get install -y nodejs \
     && rm -rf /var/lib/apt/lists/*
 
 COPY package.json package-lock.json ./
@@ -20,12 +22,12 @@ RUN npm ci
 COPY --from=vendor /app .
 RUN npm run build
 
-FROM php:8.3-cli
+FROM php:8.4-cli
 WORKDIR /var/www/html
 
 RUN apt-get update && apt-get install -y \
-    git unzip libpq-dev libzip-dev \
-    && docker-php-ext-install pdo pdo_pgsql zip \
+    git unzip libpq-dev libzip-dev libonig-dev \
+    && docker-php-ext-install mbstring pdo pdo_pgsql zip \
     && rm -rf /var/lib/apt/lists/*
 
 COPY --from=vendor /app .
