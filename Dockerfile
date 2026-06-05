@@ -10,12 +10,14 @@ RUN composer dump-autoload --optimize && php artisan package:discover --ansi
 FROM node:22 AS assets
 WORKDIR /app
 
+RUN apt-get update && apt-get install -y \
+    php-cli php-mbstring php-xml php-curl php-zip php-sqlite3 \
+    && rm -rf /var/lib/apt/lists/*
+
 COPY package.json package-lock.json ./
 RUN npm ci
 
-COPY resources ./resources
-COPY public ./public
-COPY vite.config.ts tsconfig.json components.json ./
+COPY --from=vendor /app .
 RUN npm run build
 
 FROM php:8.3-cli
