@@ -15,6 +15,7 @@ type Course = {
   teacher_id?: number | null
   enroll_code?: string | null
   cover_image_url?: string | null
+  lessons_count?: number
   lessons?: Lesson[]
   test_available?: boolean
 }
@@ -132,7 +133,7 @@ function unenroll(courseId: number) {
         <div class="space-y-4">
           <div class="rounded-3xl bg-white/80 ring-1 ring-black/5 p-6">
             <div class="text-xs uppercase tracking-wide text-slate-500">Zhrnutie</div>
-            <div class="mt-3 text-sm text-slate-700">Lekcií: <span class="font-semibold">{{ course.lessons?.length ?? 0 }}</span></div>
+            <div class="mt-3 text-sm text-slate-700">Lekcií: <span class="font-semibold">{{ course.lessons_count ?? course.lessons?.length ?? 0 }}</span></div>
             <div class="mt-1 text-sm text-slate-700">Typ: <span class="font-semibold">{{ course.is_public ? 'Otvorený' : 'S kódom' }}</span></div>
           </div>
 

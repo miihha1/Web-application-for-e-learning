@@ -141,6 +141,7 @@ class CourseController extends Controller
                 'teacher_id' => $course->teacher_id,
                 'enroll_code' => $canSeeCode ? $course->enroll_code : null,
                 'cover_image_url' => $this->publicAssetUrl($course->cover_image_path),
+                'lessons_count' => $course->lessons->count(),
                 'lessons' => $canAccess ? $course->lessons : [],
                 'test_available' => $testAvailable,
             ],

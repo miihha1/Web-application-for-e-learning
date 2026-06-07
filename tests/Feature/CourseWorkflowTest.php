@@ -4,6 +4,7 @@ namespace Tests\Feature;
 
 use App\Models\Course;
 use App\Models\Enrollment;
+use App\Models\Lesson;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
@@ -23,7 +24,7 @@ class CourseWorkflowTest extends TestCase
 
         $course = Course::where('title', 'Admin Course')->firstOrFail();
 
-        $response->assertRedirect(route('courses.show', $course));
+        $response->assertRedirect(route('teacher.courses.manage', $course));
         $this->assertTrue($course->is_public);
         $this->assertNull($course->teacher_id);
         $this->assertNull($course->enroll_code);
@@ -40,7 +41,7 @@ class CourseWorkflowTest extends TestCase
 
         $course = Course::where('title', 'Teacher Course')->firstOrFail();
 
-        $response->assertRedirect(route('courses.show', $course));
+        $response->assertRedirect(route('teacher.courses.manage', $course));
         $this->assertFalse($course->is_public);
         $this->assertSame($teacher->id, $course->teacher_id);
         $this->assertNotEmpty($course->enroll_code);
@@ -154,6 +155,37 @@ class CourseWorkflowTest extends TestCase
                 ->component('Courses/My')
                 ->has('courses', 1)
                 ->where('courses.0.title', 'Enrolled Course')
+            );
+    }
+
+    public function test_private_course_detail_shows_lesson_count_without_exposing_lessons(): void
+    {
+        $teacher = User::factory()->create(['role' => 'teacher']);
+        $student = User::factory()->create(['role' => 'student']);
+        $course = Course::create([
+            'title' => 'Private Course',
+            'description' => 'Hidden lessons',
+            'teacher_id' => $teacher->id,
+            'is_public' => false,
+            'enroll_code' => 'ABC12345',
+        ]);
+
+        foreach (range(1, 3) as $order) {
+            Lesson::create([
+                'course_id' => $course->id,
+                'title' => "Lesson {$order}",
+                'content' => "Content {$order}",
+                'order' => $order,
+            ]);
+        }
+
+        $this->actingAs($student)
+            ->get(route('courses.show', $course))
+            ->assertOk()
+            ->assertInertia(fn ($page) => $page
+                ->component('Courses/Show')
+                ->where('course.lessons_count', 3)
+                ->has('course.lessons', 0)
             );
     }
 }
