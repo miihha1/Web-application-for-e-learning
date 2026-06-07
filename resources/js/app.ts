@@ -9,16 +9,41 @@ import { initializeTheme } from './composables/useAppearance';
 import { initializeLanguage } from './composables/useLanguage';
 
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
-const csrfToken = document
-    .querySelector<HTMLMetaElement>('meta[name="csrf-token"]')
-    ?.getAttribute('content');
 
-if (csrfToken) {
-    axios.defaults.headers.common['X-CSRF-TOKEN'] = csrfToken;
-}
+const readCookie = (name: string) =>
+    document.cookie
+        .split('; ')
+        .find((row) => row.startsWith(`${name}=`))
+        ?.split('=')
+        .slice(1)
+        .join('=');
 
 axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 axios.defaults.withCredentials = true;
+axios.defaults.withXSRFToken = true;
+axios.defaults.xsrfCookieName = 'XSRF-TOKEN';
+axios.defaults.xsrfHeaderName = 'X-XSRF-TOKEN';
+
+axios.interceptors.request.use((config) => {
+    const token = readCookie('XSRF-TOKEN');
+
+    if (token) {
+        config.headers.set('X-XSRF-TOKEN', decodeURIComponent(token));
+    }
+
+    return config;
+});
+
+axios.interceptors.response.use(
+    (response) => response,
+    (error) => {
+        if (error.response?.status === 419) {
+            window.location.reload();
+        }
+
+        return Promise.reject(error);
+    },
+);
 
 createInertiaApp({
     title: (title) => (title ? `${title} - ${appName}` : appName),
