@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use Laravel\Fortify\Features;
 
+use App\Http\Controllers\Auth\GoogleAuthController;
 use App\Http\Controllers\Admin\UserManagementController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\DashboardController;
@@ -33,6 +34,14 @@ Route::get('/', function () {
         'canRegister' => Features::enabled(Features::registration()),
     ]);
 })->name('home');
+
+Route::get('/auth/google', [GoogleAuthController::class, 'redirect'])
+    ->middleware('guest')
+    ->name('auth.google.redirect');
+
+Route::get('/auth/google/callback', [GoogleAuthController::class, 'callback'])
+    ->middleware('guest')
+    ->name('auth.google.callback');
 
 Route::get('/courses', [CourseController::class, 'index'])->name('courses.index');
 Route::get('/courses/{course}', [CourseController::class, 'show'])->name('courses.show');

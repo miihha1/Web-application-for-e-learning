@@ -9,6 +9,7 @@ import AuthBase from '@/layouts/AuthLayout.vue';
 import { login } from '@/routes';
 import { store } from '@/routes/register';
 import { Form, Head } from '@inertiajs/vue3';
+import { Chrome } from 'lucide-vue-next';
 </script>
 
 <template>
@@ -104,5 +105,18 @@ import { Form, Head } from '@inertiajs/vue3';
                 >
             </div>
         </Form>
+
+        <div class="my-6 flex items-center gap-3">
+            <div class="h-px flex-1 bg-border"></div>
+            <span class="text-xs uppercase text-muted-foreground">alebo</span>
+            <div class="h-px flex-1 bg-border"></div>
+        </div>
+
+        <Button as-child variant="outline" class="w-full">
+            <a href="/auth/google">
+                <Chrome class="mr-2 size-4" />
+                Pokračovať cez Google
+            </a>
+        </Button>
     </AuthBase>
 </template>

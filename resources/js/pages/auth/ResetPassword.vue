@@ -26,7 +26,11 @@ const inputEmail = ref(props.email);
 
         <Form
             v-bind="update.form()"
-            :transform="(data) => ({ ...data, token, email })"
+            :transform="(data) => ({
+                ...data,
+                token: props.token,
+                email: inputEmail,
+            })"
             :reset-on-success="['password', 'password_confirmation']"
             v-slot="{ errors, processing }"
         >
