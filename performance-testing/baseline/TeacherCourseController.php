@@ -507,20 +507,20 @@ class TeacherCourseController extends Controller
             $allResults = TestResult::query()
                 ->where('test_id', $test->id)
                 ->whereIn('user_id', $studentIds)
+                ->with('user:id,name,email')
                 ->orderByDesc('created_at')
-                ->get(['id', 'user_id', 'percent', 'passed', 'attempt', 'created_at', 'answers']);
+                ->get();
 
             $latestResults = $allResults
                 ->groupBy('user_id')
-                ->map(fn($results) => $results->first());
+                ->map(fn($results) => $results->sortByDesc('created_at')->first());
         }
 
         $progressRows = LessonProgress::query()
             ->whereIn('lesson_id', $lessonIds)
             ->whereIn('user_id', $studentIds)
             ->whereNotNull('completed_at')
-            ->toBase()
-            ->get(['user_id', 'lesson_id'])
+            ->get()
             ->groupBy('user_id');
 
         $students = $enrollments->map(function ($enrollment) use ($course, $progressRows, $latestResults) {
@@ -545,9 +545,7 @@ class TeacherCourseController extends Controller
             ];
         })->values();
 
-        // Decode the JSON cast once per attempt, not once per question.
-        $answersByResult = $allResults->map(fn($result) => $result->answers ?? []);
-        $wrongQuestions = $questions->map(function ($question) use ($answersByResult) {
+        $wrongQuestions = $questions->map(function ($question) use ($allResults) {
             $wrong = 0;
             $answered = 0;
             $correctIds = $question->options
@@ -558,15 +556,18 @@ class TeacherCourseController extends Controller
                 ->values()
                 ->all();
 
-            foreach ($answersByResult as $answers) {
-                $chosen = $answers[$question->id] ?? null;
+            foreach ($allResults as $result) {
+                $chosen = $result->answers[$question->id] ?? null;
                 if (!$chosen) {
                     continue;
                 }
 
                 $answered++;
-                $chosenIds = array_map(fn($id) => (int) $id, is_array($chosen) ? $chosen : [$chosen]);
-                sort($chosenIds);
+                $chosenIds = collect(is_array($chosen) ? $chosen : [$chosen])
+                    ->map(fn($id) => (int) $id)
+                    ->sort()
+                    ->values()
+                    ->all();
 
                 if ($chosenIds !== $correctIds) {
                     $wrong++;

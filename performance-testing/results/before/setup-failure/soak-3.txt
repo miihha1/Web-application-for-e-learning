@@ -1,0 +1,200 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: performance-testing/scripts/scenario.js
+        output: json (D:\KS\SemZadanie\elearn\performance-testing\results\before\soak-3.ndjson)
+
+     scenarios: (100.00%) 1 scenario, 5 max VUs, 3m30s max duration (incl. graceful stop):
+              * soak: 5 looping VUs for 3m0s (gracefulStop: 30s)
+
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+time="2026-10-02T11:05:02+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/login\": request timeout"
+
+Run    [ 100% ] setup()
+soak   [   0% ]
+time="2026-10-02T11:05:02+02:00" level=error msg="GoError: the body is null so we can't transform it to HTML - this likely was because of a request error getting the response\n\tat reflect.methodValueCall (native)\n\tat setup (file:///D:/KS/SemZadanie/elearn/performance-testing/scripts/scenario.js:14:63(12))\n" hint="script exception" source=stacktrace

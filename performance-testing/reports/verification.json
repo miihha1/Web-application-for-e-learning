@@ -1,0 +1,9 @@
+{
+  "analytics_equal": true,
+  "same_test_script_and_correct_controllers": true,
+  "database_unchanged": true,
+  "pdf_pages": 10,
+  "presentation_slides": 12,
+  "frontend_build_exit": 0,
+  "control_checks_passed": 40
+}

@@ -1,0 +1,18 @@
+{
+  "os": "Windows-10-10.0.26120-SP0",
+  "python": "3.9.13",
+  "php": "PHP 8.5.0 (cli) (built: Nov 21 2025 13:38:22) (NTS Visual C++ 2022 x64)\nCopyright (c) The PHP Group\nBuilt by Beyond Code for php.new\nZend Engine v4.5.0, Copyright (c) Zend Technologies\n    with Zend OPcache v8.5.0, Copyright (c), by Zend Technologies\n",
+  "packages": {
+    "inertiajs/inertia-laravel": "v2.0.18",
+    "laravel/framework": "v12.44.0"
+  },
+  "workers": 1,
+  "session": "file",
+  "database": "SQLite dedicated",
+  "authentication": "Real teacher login with CSRF; setup cookie copied to VUs; shared teacher session, GET-only analytics",
+  "k6": "k6.exe v2.3.0 (commit/e088784614, go1.26.8, windows/amd64)\n",
+  "before_commit": "80aaabefbdfa268f1ed6a10395db905e0f63a89c",
+  "database_sha256": "43b14b0a6d9c6bc13c28111bba3e70dadccfedaf58b9a38bbdf1c8dd02a9d2d6",
+  "k6_sha256": "efec04c36452cfb9c0ef313082c021e5656caf5004f922c2d8b807fdf4a0e02f",
+  "k6_zip_sha256": "112276d495e5741c968e2bc09ea6196099c1275bd6db9ee0875d173c7148ce43"
+}

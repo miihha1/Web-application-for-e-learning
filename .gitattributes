@@ -9,3 +9,6 @@
 CHANGELOG.md export-ignore
 README.md export-ignore
 .github/workflows/browser-tests.yml export-ignore
+
+# Preserve the exact controller bytes used by the performance experiment.
+app/Http/Controllers/TeacherCourseController.php text eol=crlf

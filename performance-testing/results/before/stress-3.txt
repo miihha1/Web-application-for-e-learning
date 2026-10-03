@@ -1,0 +1,1111 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: performance-testing/scripts/scenario.js
+        output: json (D:\KS\SemZadanie\elearn\performance-testing\results\before\stress-3.ndjson)
+
+     scenarios: (100.00%) 4 scenarios, 100 max VUs, 2m40s max duration (incl. graceful stop):
+              * vu10: 10 looping VUs for 30s (gracefulStop: 10s)
+              * vu20: 20 looping VUs for 30s (startTime: 40s, gracefulStop: 10s)
+              * vu50: 50 looping VUs for 30s (startTime: 1m20s, gracefulStop: 10s)
+              * vu100: 100 looping VUs for 30s (startTime: 2m0s, gracefulStop: 10s)
+
+
+Run     [ 100% ] setup()
+vu10    [   0% ]
+vu20    [   0% ]
+vu50    [   0% ]
+vu100   [   0% ]
+
+Run     [ 100% ] setup()
+vu10    [   0% ]
+vu20    [   0% ]
+vu50    [   0% ]
+vu100   [   0% ]
+
+Run     [ 100% ] setup()
+vu10    [   0% ]
+vu20    [   0% ]
+vu50    [   0% ]
+vu100   [   0% ]
+
+Run     [ 100% ] setup()
+vu10    [   0% ]
+vu20    [   0% ]
+vu50    [   0% ]
+vu100   [   0% ]
+
+Run     [ 100% ] setup()
+vu10    [   0% ]
+vu20    [   0% ]
+vu50    [   0% ]
+vu100   [   0% ]
+
+Run     [ 100% ] setup()
+vu10    [   0% ]
+vu20    [   0% ]
+vu50    [   0% ]
+vu100   [   0% ]
+
+Run     [ 100% ] setup()
+vu10    [   0% ]
+vu20    [   0% ]
+vu50    [   0% ]
+vu100   [   0% ]
+
+Run     [ 100% ] setup()
+vu10    [   0% ]
+vu20    [   0% ]
+vu50    [   0% ]
+vu100   [   0% ]
+
+running (0m09.0s), 010/100 VUs, 0 complete and 0 interrupted iterations
+vu10    [   1% ] 10 VUs   00.4s/30s
+vu20  • [   0% ] waiting  39.6s
+vu50  • [   0% ] waiting  1m19.6s
+vu100 • [   0% ] waiting  1m59.6s
+
+running (0m10.0s), 010/100 VUs, 0 complete and 0 interrupted iterations
+vu10    [   5% ] 10 VUs   01.4s/30s
+vu20  • [   0% ] waiting  38.6s
+vu50  • [   0% ] waiting  1m18.6s
+vu100 • [   0% ] waiting  1m58.6s
+
+running (0m11.0s), 010/100 VUs, 1 complete and 0 interrupted iterations
+vu10    [   8% ] 10 VUs   02.4s/30s
+vu20  • [   0% ] waiting  37.6s
+vu50  • [   0% ] waiting  1m17.6s
+vu100 • [   0% ] waiting  1m57.6s
+
+running (0m12.0s), 010/100 VUs, 2 complete and 0 interrupted iterations
+vu10    [  11% ] 10 VUs   03.4s/30s
+vu20  • [   0% ] waiting  36.6s
+vu50  • [   0% ] waiting  1m16.6s
+vu100 • [   0% ] waiting  1m56.6s
+
+running (0m13.0s), 010/100 VUs, 3 complete and 0 interrupted iterations
+vu10    [  15% ] 10 VUs   04.4s/30s
+vu20  • [   0% ] waiting  35.6s
+vu50  • [   0% ] waiting  1m15.6s
+vu100 • [   0% ] waiting  1m55.6s
+
+running (0m14.0s), 010/100 VUs, 4 complete and 0 interrupted iterations
+vu10    [  18% ] 10 VUs   05.4s/30s
+vu20  • [   0% ] waiting  34.6s
+vu50  • [   0% ] waiting  1m14.6s
+vu100 • [   0% ] waiting  1m54.6s
+
+running (0m15.0s), 010/100 VUs, 5 complete and 0 interrupted iterations
+vu10    [  21% ] 10 VUs   06.4s/30s
+vu20  • [   0% ] waiting  33.6s
+vu50  • [   0% ] waiting  1m13.6s
+vu100 • [   0% ] waiting  1m53.6s
+
+running (0m16.0s), 010/100 VUs, 6 complete and 0 interrupted iterations
+vu10    [  25% ] 10 VUs   07.4s/30s
+vu20  • [   0% ] waiting  32.6s
+vu50  • [   0% ] waiting  1m12.6s
+vu100 • [   0% ] waiting  1m52.6s
+
+running (0m17.0s), 010/100 VUs, 6 complete and 0 interrupted iterations
+vu10    [  28% ] 10 VUs   08.4s/30s
+vu20  • [   0% ] waiting  31.6s
+vu50  • [   0% ] waiting  1m11.6s
+vu100 • [   0% ] waiting  1m51.6s
+
+running (0m18.0s), 010/100 VUs, 7 complete and 0 interrupted iterations
+vu10    [  31% ] 10 VUs   09.4s/30s
+vu20  • [   0% ] waiting  30.6s
+vu50  • [   0% ] waiting  1m10.6s
+vu100 • [   0% ] waiting  1m50.6s
+
+running (0m19.0s), 010/100 VUs, 8 complete and 0 interrupted iterations
+vu10    [  35% ] 10 VUs   10.4s/30s
+vu20  • [   0% ] waiting  29.6s
+vu50  • [   0% ] waiting  1m09.6s
+vu100 • [   0% ] waiting  1m49.6s
+
+running (0m20.0s), 010/100 VUs, 9 complete and 0 interrupted iterations
+vu10    [  38% ] 10 VUs   11.4s/30s
+vu20  • [   0% ] waiting  28.6s
+vu50  • [   0% ] waiting  1m08.6s
+vu100 • [   0% ] waiting  1m48.6s
+
+running (0m21.0s), 010/100 VUs, 10 complete and 0 interrupted iterations
+vu10    [  41% ] 10 VUs   12.4s/30s
+vu20  • [   0% ] waiting  27.6s
+vu50  • [   0% ] waiting  1m07.6s
+vu100 • [   0% ] waiting  1m47.6s
+
+running (0m22.0s), 010/100 VUs, 11 complete and 0 interrupted iterations
+vu10    [  45% ] 10 VUs   13.4s/30s
+vu20  • [   0% ] waiting  26.6s
+vu50  • [   0% ] waiting  1m06.6s
+vu100 • [   0% ] waiting  1m46.6s
+
+running (0m23.0s), 010/100 VUs, 12 complete and 0 interrupted iterations
+vu10    [  48% ] 10 VUs   14.4s/30s
+vu20  • [   0% ] waiting  25.6s
+vu50  • [   0% ] waiting  1m05.6s
+vu100 • [   0% ] waiting  1m45.6s
+
+running (0m24.0s), 010/100 VUs, 13 complete and 0 interrupted iterations
+vu10    [  51% ] 10 VUs   15.4s/30s
+vu20  • [   0% ] waiting  24.6s
+vu50  • [   0% ] waiting  1m04.6s
+vu100 • [   0% ] waiting  1m44.6s
+
+running (0m25.0s), 010/100 VUs, 14 complete and 0 interrupted iterations
+vu10    [  55% ] 10 VUs   16.4s/30s
+vu20  • [   0% ] waiting  23.6s
+vu50  • [   0% ] waiting  1m03.6s
+vu100 • [   0% ] waiting  1m43.6s
+
+running (0m26.0s), 010/100 VUs, 15 complete and 0 interrupted iterations
+vu10    [  58% ] 10 VUs   17.4s/30s
+vu20  • [   0% ] waiting  22.6s
+vu50  • [   0% ] waiting  1m02.6s
+vu100 • [   0% ] waiting  1m42.6s
+
+running (0m27.0s), 010/100 VUs, 16 complete and 0 interrupted iterations
+vu10    [  61% ] 10 VUs   18.4s/30s
+vu20  • [   0% ] waiting  21.6s
+vu50  • [   0% ] waiting  1m01.6s
+vu100 • [   0% ] waiting  1m41.6s
+
+running (0m28.0s), 010/100 VUs, 17 complete and 0 interrupted iterations
+vu10    [  65% ] 10 VUs   19.4s/30s
+vu20  • [   0% ] waiting  20.6s
+vu50  • [   0% ] waiting  1m00.6s
+vu100 • [   0% ] waiting  1m40.6s
+
+running (0m29.0s), 010/100 VUs, 18 complete and 0 interrupted iterations
+vu10    [  68% ] 10 VUs   20.4s/30s
+vu20  • [   0% ] waiting  19.6s
+vu50  • [   0% ] waiting  0m59.6s
+vu100 • [   0% ] waiting  1m39.6s
+
+running (0m30.0s), 010/100 VUs, 19 complete and 0 interrupted iterations
+vu10    [  71% ] 10 VUs   21.4s/30s
+vu20  • [   0% ] waiting  18.6s
+vu50  • [   0% ] waiting  0m58.6s
+vu100 • [   0% ] waiting  1m38.6s
+
+running (0m31.0s), 010/100 VUs, 19 complete and 0 interrupted iterations
+vu10    [  75% ] 10 VUs   22.4s/30s
+vu20  • [   0% ] waiting  17.6s
+vu50  • [   0% ] waiting  0m57.6s
+vu100 • [   0% ] waiting  1m37.6s
+
+running (0m32.0s), 010/100 VUs, 20 complete and 0 interrupted iterations
+vu10    [  78% ] 10 VUs   23.4s/30s
+vu20  • [   0% ] waiting  16.6s
+vu50  • [   0% ] waiting  0m56.6s
+vu100 • [   0% ] waiting  1m36.6s
+
+running (0m33.0s), 010/100 VUs, 21 complete and 0 interrupted iterations
+vu10    [  81% ] 10 VUs   24.4s/30s
+vu20  • [   0% ] waiting  15.6s
+vu50  • [   0% ] waiting  0m55.6s
+vu100 • [   0% ] waiting  1m35.6s
+
+running (0m34.0s), 010/100 VUs, 22 complete and 0 interrupted iterations
+vu10    [  85% ] 10 VUs   25.4s/30s
+vu20  • [   0% ] waiting  14.6s
+vu50  • [   0% ] waiting  0m54.6s
+vu100 • [   0% ] waiting  1m34.6s
+
+running (0m35.0s), 010/100 VUs, 23 complete and 0 interrupted iterations
+vu10    [  88% ] 10 VUs   26.4s/30s
+vu20  • [   0% ] waiting  13.6s
+vu50  • [   0% ] waiting  0m53.6s
+vu100 • [   0% ] waiting  1m33.6s
+
+running (0m36.0s), 010/100 VUs, 24 complete and 0 interrupted iterations
+vu10    [  91% ] 10 VUs   27.4s/30s
+vu20  • [   0% ] waiting  12.6s
+vu50  • [   0% ] waiting  0m52.6s
+vu100 • [   0% ] waiting  1m32.6s
+
+running (0m37.0s), 010/100 VUs, 25 complete and 0 interrupted iterations
+vu10    [  95% ] 10 VUs   28.4s/30s
+vu20  • [   0% ] waiting  11.6s
+vu50  • [   0% ] waiting  0m51.6s
+vu100 • [   0% ] waiting  1m31.6s
+
+running (0m38.0s), 010/100 VUs, 26 complete and 0 interrupted iterations
+vu10    [  98% ] 10 VUs   29.4s/30s
+vu20  • [   0% ] waiting  10.6s
+vu50  • [   0% ] waiting  0m50.6s
+vu100 • [   0% ] waiting  1m30.6s
+
+running (0m39.0s), 010/100 VUs, 27 complete and 0 interrupted iterations
+vu10  ↓ [ 100% ] 10 VUs   30s
+vu20  • [   0% ] waiting  09.6s
+vu50  • [   0% ] waiting  0m49.6s
+vu100 • [   0% ] waiting  1m29.6s
+
+running (0m40.0s), 009/100 VUs, 28 complete and 0 interrupted iterations
+vu10  ↓ [ 100% ] 10 VUs   30s
+vu20  • [   0% ] waiting  08.6s
+vu50  • [   0% ] waiting  0m48.6s
+vu100 • [   0% ] waiting  1m28.6s
+
+running (0m41.0s), 008/100 VUs, 29 complete and 0 interrupted iterations
+vu10  ↓ [ 100% ] 10 VUs   30s
+vu20  • [   0% ] waiting  07.6s
+vu50  • [   0% ] waiting  0m47.6s
+vu100 • [   0% ] waiting  1m27.6s
+
+running (0m42.0s), 007/100 VUs, 30 complete and 0 interrupted iterations
+vu10  ↓ [ 100% ] 10 VUs   30s
+vu20  • [   0% ] waiting  06.6s
+vu50  • [   0% ] waiting  0m46.6s
+vu100 • [   0% ] waiting  1m26.6s
+
+running (0m43.0s), 006/100 VUs, 31 complete and 0 interrupted iterations
+vu10  ↓ [ 100% ] 10 VUs   30s
+vu20  • [   0% ] waiting  05.6s
+vu50  • [   0% ] waiting  0m45.6s
+vu100 • [   0% ] waiting  1m25.6s
+
+running (0m44.0s), 005/100 VUs, 32 complete and 0 interrupted iterations
+vu10  ↓ [ 100% ] 10 VUs   30s
+vu20  • [   0% ] waiting  04.6s
+vu50  • [   0% ] waiting  0m44.6s
+vu100 • [   0% ] waiting  1m24.6s
+
+running (0m45.0s), 005/100 VUs, 32 complete and 0 interrupted iterations
+vu10  ↓ [ 100% ] 10 VUs   30s
+vu20  • [   0% ] waiting  03.6s
+vu50  • [   0% ] waiting  0m43.6s
+vu100 • [   0% ] waiting  1m23.6s
+
+running (0m46.0s), 004/100 VUs, 33 complete and 0 interrupted iterations
+vu10  ↓ [ 100% ] 10 VUs   30s
+vu20  • [   0% ] waiting  02.6s
+vu50  • [   0% ] waiting  0m42.6s
+vu100 • [   0% ] waiting  1m22.6s
+
+running (0m47.0s), 003/100 VUs, 34 complete and 0 interrupted iterations
+vu10  ↓ [ 100% ] 10 VUs   30s
+vu20  • [   0% ] waiting  01.6s
+vu50  • [   0% ] waiting  0m41.6s
+vu100 • [   0% ] waiting  1m21.6s
+
+running (0m48.0s), 002/100 VUs, 35 complete and 0 interrupted iterations
+vu10  ↓ [ 100% ] 10 VUs   30s
+vu20  • [   0% ] waiting  00.6s
+vu50  • [   0% ] waiting  0m40.6s
+vu100 • [   0% ] waiting  1m20.6s
+
+running (0m49.0s), 020/100 VUs, 36 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20    [   1% ] 20 VUs   00.4s/30s
+vu50  • [   0% ] waiting  0m39.6s
+vu100 • [   0% ] waiting  1m19.6s
+
+running (0m50.0s), 020/100 VUs, 36 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20    [   5% ] 20 VUs   01.4s/30s
+vu50  • [   0% ] waiting  0m38.6s
+vu100 • [   0% ] waiting  1m18.6s
+
+running (0m51.0s), 020/100 VUs, 37 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20    [   8% ] 20 VUs   02.4s/30s
+vu50  • [   0% ] waiting  0m37.6s
+vu100 • [   0% ] waiting  1m17.6s
+
+running (0m52.0s), 020/100 VUs, 38 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20    [  11% ] 20 VUs   03.4s/30s
+vu50  • [   0% ] waiting  0m36.6s
+vu100 • [   0% ] waiting  1m16.6s
+
+running (0m53.0s), 020/100 VUs, 39 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20    [  15% ] 20 VUs   04.4s/30s
+vu50  • [   0% ] waiting  0m35.6s
+vu100 • [   0% ] waiting  1m15.6s
+
+running (0m54.0s), 020/100 VUs, 40 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20    [  18% ] 20 VUs   05.4s/30s
+vu50  • [   0% ] waiting  0m34.6s
+vu100 • [   0% ] waiting  1m14.6s
+
+running (0m55.0s), 020/100 VUs, 41 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20    [  21% ] 20 VUs   06.4s/30s
+vu50  • [   0% ] waiting  0m33.6s
+vu100 • [   0% ] waiting  1m13.6s
+
+running (0m56.0s), 020/100 VUs, 42 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20    [  25% ] 20 VUs   07.4s/30s
+vu50  • [   0% ] waiting  0m32.6s
+vu100 • [   0% ] waiting  1m12.6s
+
+running (0m57.0s), 020/100 VUs, 42 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20    [  28% ] 20 VUs   08.4s/30s
+vu50  • [   0% ] waiting  0m31.6s
+vu100 • [   0% ] waiting  1m11.6s
+
+running (0m58.0s), 020/100 VUs, 43 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20    [  31% ] 20 VUs   09.4s/30s
+vu50  • [   0% ] waiting  0m30.6s
+vu100 • [   0% ] waiting  1m10.6s
+
+running (0m59.0s), 020/100 VUs, 44 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20    [  35% ] 20 VUs   10.4s/30s
+vu50  • [   0% ] waiting  0m29.6s
+vu100 • [   0% ] waiting  1m09.6s
+
+running (1m00.0s), 020/100 VUs, 45 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20    [  38% ] 20 VUs   11.4s/30s
+vu50  • [   0% ] waiting  0m28.6s
+vu100 • [   0% ] waiting  1m08.6s
+
+running (1m01.0s), 020/100 VUs, 46 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20    [  41% ] 20 VUs   12.4s/30s
+vu50  • [   0% ] waiting  0m27.6s
+vu100 • [   0% ] waiting  1m07.6s
+
+running (1m02.0s), 020/100 VUs, 47 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20    [  45% ] 20 VUs   13.4s/30s
+vu50  • [   0% ] waiting  0m26.6s
+vu100 • [   0% ] waiting  1m06.6s
+
+running (1m03.0s), 020/100 VUs, 48 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20    [  48% ] 20 VUs   14.4s/30s
+vu50  • [   0% ] waiting  0m25.6s
+vu100 • [   0% ] waiting  1m05.6s
+
+running (1m04.0s), 020/100 VUs, 49 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20    [  51% ] 20 VUs   15.4s/30s
+vu50  • [   0% ] waiting  0m24.6s
+vu100 • [   0% ] waiting  1m04.6s
+
+running (1m05.0s), 020/100 VUs, 50 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20    [  55% ] 20 VUs   16.4s/30s
+vu50  • [   0% ] waiting  0m23.6s
+vu100 • [   0% ] waiting  1m03.6s
+
+running (1m06.0s), 020/100 VUs, 51 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20    [  58% ] 20 VUs   17.4s/30s
+vu50  • [   0% ] waiting  0m22.6s
+vu100 • [   0% ] waiting  1m02.6s
+
+running (1m07.0s), 020/100 VUs, 52 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20    [  61% ] 20 VUs   18.4s/30s
+vu50  • [   0% ] waiting  0m21.6s
+vu100 • [   0% ] waiting  1m01.6s
+
+running (1m08.0s), 020/100 VUs, 53 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20    [  65% ] 20 VUs   19.4s/30s
+vu50  • [   0% ] waiting  0m20.6s
+vu100 • [   0% ] waiting  1m00.6s
+
+running (1m09.0s), 020/100 VUs, 54 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20    [  68% ] 20 VUs   20.4s/30s
+vu50  • [   0% ] waiting  0m19.6s
+vu100 • [   0% ] waiting  0m59.6s
+
+running (1m10.0s), 020/100 VUs, 54 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20    [  71% ] 20 VUs   21.4s/30s
+vu50  • [   0% ] waiting  0m18.6s
+vu100 • [   0% ] waiting  0m58.6s
+
+running (1m11.0s), 020/100 VUs, 55 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20    [  75% ] 20 VUs   22.4s/30s
+vu50  • [   0% ] waiting  0m17.6s
+vu100 • [   0% ] waiting  0m57.6s
+
+running (1m12.0s), 020/100 VUs, 56 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20    [  78% ] 20 VUs   23.4s/30s
+vu50  • [   0% ] waiting  0m16.6s
+vu100 • [   0% ] waiting  0m56.6s
+
+running (1m13.0s), 020/100 VUs, 57 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20    [  81% ] 20 VUs   24.4s/30s
+vu50  • [   0% ] waiting  0m15.6s
+vu100 • [   0% ] waiting  0m55.6s
+
+running (1m14.0s), 020/100 VUs, 58 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20    [  85% ] 20 VUs   25.4s/30s
+vu50  • [   0% ] waiting  0m14.6s
+vu100 • [   0% ] waiting  0m54.6s
+
+running (1m15.0s), 020/100 VUs, 59 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20    [  88% ] 20 VUs   26.4s/30s
+vu50  • [   0% ] waiting  0m13.6s
+vu100 • [   0% ] waiting  0m53.6s
+
+running (1m16.0s), 020/100 VUs, 60 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20    [  91% ] 20 VUs   27.4s/30s
+vu50  • [   0% ] waiting  0m12.6s
+vu100 • [   0% ] waiting  0m52.6s
+
+running (1m17.0s), 020/100 VUs, 61 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20    [  95% ] 20 VUs   28.4s/30s
+vu50  • [   0% ] waiting  0m11.6s
+vu100 • [   0% ] waiting  0m51.6s
+
+running (1m18.0s), 020/100 VUs, 62 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20    [  98% ] 20 VUs   29.4s/30s
+vu50  • [   0% ] waiting  0m10.6s
+vu100 • [   0% ] waiting  0m50.6s
+
+running (1m19.0s), 019/100 VUs, 63 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ↓ [ 100% ] 20 VUs   30s
+vu50  • [   0% ] waiting  0m09.6s
+vu100 • [   0% ] waiting  0m49.6s
+
+running (1m20.0s), 018/100 VUs, 64 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ↓ [ 100% ] 20 VUs   30s
+vu50  • [   0% ] waiting  0m08.6s
+vu100 • [   0% ] waiting  0m48.6s
+
+running (1m21.0s), 017/100 VUs, 65 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ↓ [ 100% ] 20 VUs   30s
+vu50  • [   0% ] waiting  0m07.6s
+vu100 • [   0% ] waiting  0m47.6s
+
+running (1m22.0s), 016/100 VUs, 66 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ↓ [ 100% ] 20 VUs   30s
+vu50  • [   0% ] waiting  0m06.6s
+vu100 • [   0% ] waiting  0m46.6s
+
+running (1m23.0s), 016/100 VUs, 66 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ↓ [ 100% ] 20 VUs   30s
+vu50  • [   0% ] waiting  0m05.6s
+vu100 • [   0% ] waiting  0m45.6s
+
+running (1m24.0s), 015/100 VUs, 67 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ↓ [ 100% ] 20 VUs   30s
+vu50  • [   0% ] waiting  0m04.6s
+vu100 • [   0% ] waiting  0m44.6s
+
+running (1m25.0s), 014/100 VUs, 68 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ↓ [ 100% ] 20 VUs   30s
+vu50  • [   0% ] waiting  0m03.6s
+vu100 • [   0% ] waiting  0m43.6s
+
+running (1m26.0s), 013/100 VUs, 69 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ↓ [ 100% ] 20 VUs   30s
+vu50  • [   0% ] waiting  0m02.6s
+vu100 • [   0% ] waiting  0m42.6s
+
+running (1m27.0s), 012/100 VUs, 70 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ↓ [ 100% ] 20 VUs   30s
+vu50  • [   0% ] waiting  0m01.6s
+vu100 • [   0% ] waiting  0m41.6s
+
+running (1m28.0s), 011/100 VUs, 71 complete and 1 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ↓ [ 100% ] 20 VUs   30s
+vu50  • [   0% ] waiting  0m00.6s
+vu100 • [   0% ] waiting  0m40.6s
+
+running (1m29.0s), 050/100 VUs, 72 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50    [   1% ] 50 VUs   00.4s/30s
+vu100 • [   0% ] waiting  0m39.6s
+
+running (1m30.0s), 050/100 VUs, 72 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50    [   5% ] 50 VUs   01.4s/30s
+vu100 • [   0% ] waiting  0m38.6s
+
+running (1m31.0s), 050/100 VUs, 72 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50    [   8% ] 50 VUs   02.4s/30s
+vu100 • [   0% ] waiting  0m37.6s
+
+running (1m32.0s), 050/100 VUs, 72 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50    [  11% ] 50 VUs   03.4s/30s
+vu100 • [   0% ] waiting  0m36.6s
+
+running (1m33.0s), 050/100 VUs, 72 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50    [  15% ] 50 VUs   04.4s/30s
+vu100 • [   0% ] waiting  0m35.6s
+
+running (1m34.0s), 050/100 VUs, 72 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50    [  18% ] 50 VUs   05.4s/30s
+vu100 • [   0% ] waiting  0m34.6s
+
+running (1m35.0s), 050/100 VUs, 72 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50    [  21% ] 50 VUs   06.4s/30s
+vu100 • [   0% ] waiting  0m33.6s
+
+running (1m36.0s), 050/100 VUs, 72 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50    [  25% ] 50 VUs   07.4s/30s
+vu100 • [   0% ] waiting  0m32.6s
+
+running (1m37.0s), 050/100 VUs, 72 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50    [  28% ] 50 VUs   08.4s/30s
+vu100 • [   0% ] waiting  0m31.6s
+
+running (1m38.0s), 050/100 VUs, 72 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50    [  31% ] 50 VUs   09.4s/30s
+vu100 • [   0% ] waiting  0m30.6s
+
+running (1m39.0s), 050/100 VUs, 72 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50    [  35% ] 50 VUs   10.4s/30s
+vu100 • [   0% ] waiting  0m29.6s
+
+running (1m40.0s), 050/100 VUs, 72 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50    [  38% ] 50 VUs   11.4s/30s
+vu100 • [   0% ] waiting  0m28.6s
+
+running (1m41.0s), 050/100 VUs, 73 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50    [  41% ] 50 VUs   12.4s/30s
+vu100 • [   0% ] waiting  0m27.6s
+
+running (1m42.0s), 050/100 VUs, 74 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50    [  45% ] 50 VUs   13.4s/30s
+vu100 • [   0% ] waiting  0m26.6s
+
+running (1m43.0s), 050/100 VUs, 75 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50    [  48% ] 50 VUs   14.4s/30s
+vu100 • [   0% ] waiting  0m25.6s
+
+running (1m44.0s), 050/100 VUs, 76 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50    [  51% ] 50 VUs   15.4s/30s
+vu100 • [   0% ] waiting  0m24.6s
+
+running (1m45.0s), 050/100 VUs, 77 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50    [  55% ] 50 VUs   16.4s/30s
+vu100 • [   0% ] waiting  0m23.6s
+
+running (1m46.0s), 050/100 VUs, 78 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50    [  58% ] 50 VUs   17.4s/30s
+vu100 • [   0% ] waiting  0m22.6s
+
+running (1m47.0s), 050/100 VUs, 79 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50    [  61% ] 50 VUs   18.4s/30s
+vu100 • [   0% ] waiting  0m21.6s
+
+running (1m48.0s), 050/100 VUs, 80 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50    [  65% ] 50 VUs   19.4s/30s
+vu100 • [   0% ] waiting  0m20.6s
+
+running (1m49.0s), 050/100 VUs, 81 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50    [  68% ] 50 VUs   20.4s/30s
+vu100 • [   0% ] waiting  0m19.6s
+
+running (1m50.0s), 050/100 VUs, 82 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50    [  71% ] 50 VUs   21.4s/30s
+vu100 • [   0% ] waiting  0m18.6s
+
+running (1m51.0s), 050/100 VUs, 82 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50    [  75% ] 50 VUs   22.4s/30s
+vu100 • [   0% ] waiting  0m17.6s
+
+running (1m52.0s), 050/100 VUs, 83 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50    [  78% ] 50 VUs   23.4s/30s
+vu100 • [   0% ] waiting  0m16.6s
+
+running (1m53.0s), 050/100 VUs, 84 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50    [  81% ] 50 VUs   24.4s/30s
+vu100 • [   0% ] waiting  0m15.6s
+
+running (1m54.0s), 050/100 VUs, 85 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50    [  85% ] 50 VUs   25.4s/30s
+vu100 • [   0% ] waiting  0m14.6s
+
+running (1m55.0s), 050/100 VUs, 86 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50    [  88% ] 50 VUs   26.4s/30s
+vu100 • [   0% ] waiting  0m13.6s
+
+running (1m56.0s), 050/100 VUs, 87 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50    [  91% ] 50 VUs   27.4s/30s
+vu100 • [   0% ] waiting  0m12.6s
+
+running (1m57.0s), 050/100 VUs, 88 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50    [  95% ] 50 VUs   28.4s/30s
+vu100 • [   0% ] waiting  0m11.6s
+
+running (1m58.0s), 050/100 VUs, 89 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50    [  98% ] 50 VUs   29.4s/30s
+vu100 • [   0% ] waiting  0m10.6s
+time="2026-10-02T11:03:20+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:03:20+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:03:20+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:03:20+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:03:20+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:03:20+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:03:20+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:03:20+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:03:20+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:03:20+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:03:20+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:03:20+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:03:20+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:03:20+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:03:20+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:03:20+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:03:20+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:03:20+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:03:20+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:03:20+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:03:20+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:03:20+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:03:20+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:03:20+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:03:20+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:03:20+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:03:20+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:03:20+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:03:20+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:03:20+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:03:20+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:03:20+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+
+running (1m59.0s), 050/100 VUs, 90 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ↓ [ 100% ] 50 VUs   30s
+vu100 • [   0% ] waiting  0m09.6s
+
+running (2m00.0s), 018/100 VUs, 122 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ↓ [ 100% ] 50 VUs   30s
+vu100 • [   0% ] waiting  0m08.6s
+
+running (2m01.0s), 018/100 VUs, 122 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ↓ [ 100% ] 50 VUs   30s
+vu100 • [   0% ] waiting  0m07.6s
+
+running (2m02.0s), 018/100 VUs, 122 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ↓ [ 100% ] 50 VUs   30s
+vu100 • [   0% ] waiting  0m06.6s
+
+running (2m03.0s), 018/100 VUs, 122 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ↓ [ 100% ] 50 VUs   30s
+vu100 • [   0% ] waiting  0m05.6s
+
+running (2m04.0s), 018/100 VUs, 122 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ↓ [ 100% ] 50 VUs   30s
+vu100 • [   0% ] waiting  0m04.6s
+
+running (2m05.0s), 018/100 VUs, 122 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ↓ [ 100% ] 50 VUs   30s
+vu100 • [   0% ] waiting  0m03.6s
+
+running (2m06.0s), 018/100 VUs, 122 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ↓ [ 100% ] 50 VUs   30s
+vu100 • [   0% ] waiting  0m02.6s
+
+running (2m07.0s), 018/100 VUs, 122 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ↓ [ 100% ] 50 VUs   30s
+vu100 • [   0% ] waiting  0m01.6s
+
+running (2m08.0s), 018/100 VUs, 122 complete and 11 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ↓ [ 100% ] 50 VUs   30s
+vu100 • [   0% ] waiting  0m00.6s
+
+running (2m09.0s), 100/100 VUs, 122 complete and 29 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ✓ [ 100% ] 50 VUs   30s
+vu100   [   1% ] 100 VUs  00.4s/30s
+
+running (2m10.0s), 100/100 VUs, 122 complete and 29 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ✓ [ 100% ] 50 VUs   30s
+vu100   [   5% ] 100 VUs  01.4s/30s
+
+running (2m11.0s), 100/100 VUs, 122 complete and 29 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ✓ [ 100% ] 50 VUs   30s
+vu100   [   8% ] 100 VUs  02.4s/30s
+
+running (2m12.0s), 100/100 VUs, 122 complete and 29 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ✓ [ 100% ] 50 VUs   30s
+vu100   [  11% ] 100 VUs  03.4s/30s
+
+running (2m13.0s), 100/100 VUs, 122 complete and 29 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ✓ [ 100% ] 50 VUs   30s
+vu100   [  15% ] 100 VUs  04.4s/30s
+
+running (2m14.0s), 100/100 VUs, 122 complete and 29 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ✓ [ 100% ] 50 VUs   30s
+vu100   [  18% ] 100 VUs  05.4s/30s
+
+running (2m15.0s), 100/100 VUs, 122 complete and 29 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ✓ [ 100% ] 50 VUs   30s
+vu100   [  21% ] 100 VUs  06.4s/30s
+
+running (2m16.0s), 100/100 VUs, 122 complete and 29 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ✓ [ 100% ] 50 VUs   30s
+vu100   [  25% ] 100 VUs  07.4s/30s
+
+running (2m17.0s), 100/100 VUs, 122 complete and 29 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ✓ [ 100% ] 50 VUs   30s
+vu100   [  28% ] 100 VUs  08.4s/30s
+
+running (2m18.0s), 100/100 VUs, 122 complete and 29 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ✓ [ 100% ] 50 VUs   30s
+vu100   [  31% ] 100 VUs  09.4s/30s
+
+running (2m19.0s), 100/100 VUs, 122 complete and 29 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ✓ [ 100% ] 50 VUs   30s
+vu100   [  35% ] 100 VUs  10.4s/30s
+
+running (2m20.0s), 100/100 VUs, 122 complete and 29 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ✓ [ 100% ] 50 VUs   30s
+vu100   [  38% ] 100 VUs  11.4s/30s
+
+running (2m21.0s), 100/100 VUs, 122 complete and 29 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ✓ [ 100% ] 50 VUs   30s
+vu100   [  41% ] 100 VUs  12.4s/30s
+
+running (2m22.0s), 100/100 VUs, 122 complete and 29 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ✓ [ 100% ] 50 VUs   30s
+vu100   [  45% ] 100 VUs  13.4s/30s
+
+running (2m23.0s), 100/100 VUs, 122 complete and 29 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ✓ [ 100% ] 50 VUs   30s
+vu100   [  48% ] 100 VUs  14.4s/30s
+
+running (2m24.0s), 100/100 VUs, 122 complete and 29 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ✓ [ 100% ] 50 VUs   30s
+vu100   [  51% ] 100 VUs  15.4s/30s
+
+running (2m25.0s), 100/100 VUs, 122 complete and 29 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ✓ [ 100% ] 50 VUs   30s
+vu100   [  55% ] 100 VUs  16.4s/30s
+
+running (2m26.0s), 100/100 VUs, 122 complete and 29 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ✓ [ 100% ] 50 VUs   30s
+vu100   [  58% ] 100 VUs  17.4s/30s
+
+running (2m27.0s), 100/100 VUs, 122 complete and 29 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ✓ [ 100% ] 50 VUs   30s
+vu100   [  61% ] 100 VUs  18.4s/30s
+
+running (2m28.0s), 100/100 VUs, 122 complete and 29 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ✓ [ 100% ] 50 VUs   30s
+vu100   [  65% ] 100 VUs  19.4s/30s
+
+running (2m29.0s), 100/100 VUs, 122 complete and 29 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ✓ [ 100% ] 50 VUs   30s
+vu100   [  68% ] 100 VUs  20.4s/30s
+
+running (2m30.0s), 100/100 VUs, 122 complete and 29 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ✓ [ 100% ] 50 VUs   30s
+vu100   [  71% ] 100 VUs  21.4s/30s
+
+running (2m31.0s), 100/100 VUs, 122 complete and 29 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ✓ [ 100% ] 50 VUs   30s
+vu100   [  75% ] 100 VUs  22.4s/30s
+
+running (2m32.0s), 100/100 VUs, 122 complete and 29 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ✓ [ 100% ] 50 VUs   30s
+vu100   [  78% ] 100 VUs  23.4s/30s
+
+running (2m33.0s), 100/100 VUs, 122 complete and 29 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ✓ [ 100% ] 50 VUs   30s
+vu100   [  81% ] 100 VUs  24.4s/30s
+
+running (2m34.0s), 100/100 VUs, 122 complete and 29 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ✓ [ 100% ] 50 VUs   30s
+vu100   [  85% ] 100 VUs  25.4s/30s
+
+running (2m35.0s), 100/100 VUs, 122 complete and 29 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ✓ [ 100% ] 50 VUs   30s
+vu100   [  88% ] 100 VUs  26.4s/30s
+
+running (2m36.0s), 100/100 VUs, 122 complete and 29 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ✓ [ 100% ] 50 VUs   30s
+vu100   [  91% ] 100 VUs  27.4s/30s
+
+running (2m37.0s), 100/100 VUs, 122 complete and 29 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ✓ [ 100% ] 50 VUs   30s
+vu100   [  95% ] 100 VUs  28.4s/30s
+
+running (2m38.0s), 100/100 VUs, 122 complete and 29 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ✓ [ 100% ] 50 VUs   30s
+vu100   [  98% ] 100 VUs  29.4s/30s
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+time="2026-10-02T11:04:00+02:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:8765/teacher/courses/3/manage\": request timeout"
+
+running (2m39.0s), 100/100 VUs, 122 complete and 29 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ✓ [ 100% ] 50 VUs   30s
+vu100 ↓ [ 100% ] 100 VUs  30s
+
+running (2m39.6s), 000/100 VUs, 222 complete and 29 interrupted iterations
+vu10  ✓ [ 100% ] 10 VUs   30s
+vu20  ✓ [ 100% ] 20 VUs   30s
+vu50  ✓ [ 100% ] 50 VUs   30s
+vu100 ✓ [ 100% ] 100 VUs  30s
+time="2026-10-02T11:04:02+02:00" level=error msg="thresholds on metrics 'analytics_error' have been crossed"

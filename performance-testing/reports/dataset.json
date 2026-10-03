@@ -1,0 +1,32 @@
+{
+    "seed": 202627,
+    "datasets": [
+        {
+            "course_id": 1,
+            "students": 50,
+            "lessons": 20,
+            "questions": 10,
+            "options": 40,
+            "results": 250,
+            "completed_progress": 667
+        },
+        {
+            "course_id": 2,
+            "students": 250,
+            "lessons": 20,
+            "questions": 10,
+            "options": 40,
+            "results": 1250,
+            "completed_progress": 3333
+        },
+        {
+            "course_id": 3,
+            "students": 1000,
+            "lessons": 20,
+            "questions": 10,
+            "options": 40,
+            "results": 5000,
+            "completed_progress": 13333
+        }
+    ]
+}

@@ -1,0 +1,165 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: performance-testing/scripts/scenario.js
+        output: json (D:\KS\SemZadanie\elearn\performance-testing\results\after\load-3.ndjson)
+
+     scenarios: (100.00%) 1 scenario, 20 max VUs, 50s max duration (incl. graceful stop):
+              * load: Up to 20 looping VUs for 40s over 3 stages (gracefulRampDown: 10s, gracefulStop: 30s)
+
+
+Run    [ 100% ] setup()
+load   [   0% ]
+
+running (02.0s), 03/20 VUs, 0 complete and 0 interrupted iterations
+load   [   2% ] 03/20 VUs  01.0s/40.0s
+
+running (03.0s), 07/20 VUs, 1 complete and 0 interrupted iterations
+load   [   5% ] 07/20 VUs  02.0s/40.0s
+
+running (04.0s), 11/20 VUs, 3 complete and 0 interrupted iterations
+load   [   7% ] 11/20 VUs  03.0s/40.0s
+
+running (05.0s), 15/20 VUs, 5 complete and 0 interrupted iterations
+load   [  10% ] 15/20 VUs  04.0s/40.0s
+
+running (06.0s), 19/20 VUs, 7 complete and 0 interrupted iterations
+load   [  12% ] 19/20 VUs  05.0s/40.0s
+
+running (07.0s), 20/20 VUs, 9 complete and 0 interrupted iterations
+load   [  15% ] 20/20 VUs  06.0s/40.0s
+
+running (08.0s), 20/20 VUs, 11 complete and 0 interrupted iterations
+load   [  17% ] 20/20 VUs  07.0s/40.0s
+
+running (09.0s), 20/20 VUs, 13 complete and 0 interrupted iterations
+load   [  20% ] 20/20 VUs  08.0s/40.0s
+
+running (10.0s), 20/20 VUs, 15 complete and 0 interrupted iterations
+load   [  22% ] 20/20 VUs  09.0s/40.0s
+
+running (11.0s), 20/20 VUs, 17 complete and 0 interrupted iterations
+load   [  25% ] 20/20 VUs  10.0s/40.0s
+
+running (12.0s), 20/20 VUs, 19 complete and 0 interrupted iterations
+load   [  27% ] 20/20 VUs  11.0s/40.0s
+
+running (13.0s), 20/20 VUs, 21 complete and 0 interrupted iterations
+load   [  30% ] 20/20 VUs  12.0s/40.0s
+
+running (14.0s), 20/20 VUs, 23 complete and 0 interrupted iterations
+load   [  32% ] 20/20 VUs  13.0s/40.0s
+
+running (15.0s), 20/20 VUs, 25 complete and 0 interrupted iterations
+load   [  35% ] 20/20 VUs  14.0s/40.0s
+
+running (16.0s), 20/20 VUs, 27 complete and 0 interrupted iterations
+load   [  37% ] 20/20 VUs  15.0s/40.0s
+
+running (17.0s), 20/20 VUs, 29 complete and 0 interrupted iterations
+load   [  40% ] 20/20 VUs  16.0s/40.0s
+
+running (18.0s), 20/20 VUs, 31 complete and 0 interrupted iterations
+load   [  42% ] 20/20 VUs  17.0s/40.0s
+
+running (19.0s), 20/20 VUs, 33 complete and 0 interrupted iterations
+load   [  45% ] 20/20 VUs  18.0s/40.0s
+
+running (20.0s), 20/20 VUs, 35 complete and 0 interrupted iterations
+load   [  47% ] 20/20 VUs  19.0s/40.0s
+
+running (21.0s), 20/20 VUs, 37 complete and 0 interrupted iterations
+load   [  50% ] 20/20 VUs  20.0s/40.0s
+
+running (22.0s), 20/20 VUs, 39 complete and 0 interrupted iterations
+load   [  52% ] 20/20 VUs  21.0s/40.0s
+
+running (23.0s), 20/20 VUs, 41 complete and 0 interrupted iterations
+load   [  55% ] 20/20 VUs  22.0s/40.0s
+
+running (24.0s), 20/20 VUs, 43 complete and 0 interrupted iterations
+load   [  57% ] 20/20 VUs  23.0s/40.0s
+
+running (25.0s), 20/20 VUs, 45 complete and 0 interrupted iterations
+load   [  60% ] 20/20 VUs  24.0s/40.0s
+
+running (26.0s), 20/20 VUs, 47 complete and 0 interrupted iterations
+load   [  62% ] 20/20 VUs  25.0s/40.0s
+
+running (27.0s), 20/20 VUs, 49 complete and 0 interrupted iterations
+load   [  65% ] 20/20 VUs  26.0s/40.0s
+
+running (28.0s), 20/20 VUs, 51 complete and 0 interrupted iterations
+load   [  67% ] 20/20 VUs  27.0s/40.0s
+
+running (29.0s), 20/20 VUs, 53 complete and 0 interrupted iterations
+load   [  70% ] 20/20 VUs  28.0s/40.0s
+
+running (30.0s), 20/20 VUs, 55 complete and 0 interrupted iterations
+load   [  72% ] 20/20 VUs  29.0s/40.0s
+
+running (31.0s), 20/20 VUs, 57 complete and 0 interrupted iterations
+load   [  75% ] 20/20 VUs  30.0s/40.0s
+
+running (32.0s), 20/20 VUs, 59 complete and 0 interrupted iterations
+load   [  77% ] 20/20 VUs  31.0s/40.0s
+
+running (33.0s), 20/20 VUs, 61 complete and 0 interrupted iterations
+load   [  80% ] 20/20 VUs  32.0s/40.0s
+
+running (34.0s), 20/20 VUs, 63 complete and 0 interrupted iterations
+load   [  82% ] 20/20 VUs  33.0s/40.0s
+
+running (35.0s), 20/20 VUs, 65 complete and 0 interrupted iterations
+load   [  85% ] 20/20 VUs  34.0s/40.0s
+
+running (36.0s), 20/20 VUs, 67 complete and 0 interrupted iterations
+load   [  87% ] 20/20 VUs  35.0s/40.0s
+
+running (37.0s), 20/20 VUs, 69 complete and 0 interrupted iterations
+load   [  90% ] 20/20 VUs  36.0s/40.0s
+
+running (38.0s), 20/20 VUs, 71 complete and 0 interrupted iterations
+load   [  92% ] 20/20 VUs  37.0s/40.0s
+
+running (39.0s), 20/20 VUs, 74 complete and 0 interrupted iterations
+load   [  95% ] 20/20 VUs  38.0s/40.0s
+
+running (40.0s), 19/20 VUs, 76 complete and 0 interrupted iterations
+load   [  97% ] 19/20 VUs  39.0s/40.0s
+
+running (41.0s), 17/20 VUs, 78 complete and 0 interrupted iterations
+load   [ 100% ] 17/20 VUs  40.0s/40.0s
+
+running (42.0s), 15/20 VUs, 80 complete and 0 interrupted iterations
+load ↓ [ 100% ] 17/20 VUs  40s
+
+running (43.0s), 13/20 VUs, 82 complete and 0 interrupted iterations
+load ↓ [ 100% ] 17/20 VUs  40s
+
+running (44.0s), 11/20 VUs, 84 complete and 0 interrupted iterations
+load ↓ [ 100% ] 17/20 VUs  40s
+
+running (45.0s), 09/20 VUs, 86 complete and 0 interrupted iterations
+load ↓ [ 100% ] 17/20 VUs  40s
+
+running (46.0s), 07/20 VUs, 88 complete and 0 interrupted iterations
+load ↓ [ 100% ] 17/20 VUs  40s
+
+running (47.0s), 05/20 VUs, 90 complete and 0 interrupted iterations
+load ↓ [ 100% ] 17/20 VUs  40s
+
+running (48.0s), 03/20 VUs, 92 complete and 0 interrupted iterations
+load ↓ [ 100% ] 17/20 VUs  40s
+
+running (49.0s), 01/20 VUs, 94 complete and 0 interrupted iterations
+load ↓ [ 100% ] 17/20 VUs  40s
+
+running (49.5s), 00/20 VUs, 95 complete and 0 interrupted iterations
+load ✓ [ 100% ] 00/20 VUs  40s

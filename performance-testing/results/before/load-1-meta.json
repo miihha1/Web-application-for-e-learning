@@ -1,0 +1,16 @@
+{
+  "started_utc": "2026-10-02T08:59:04Z",
+  "seconds": 41.50055193901062,
+  "exit_code": 0,
+  "mode": "load",
+  "course": 1,
+  "script_sha256": "ef6c6e1fac6dd43e246e4ad889031a8f6f8b0d08b91fb58483b6f36209ece7c9",
+  "controller_sha256": "275f7e40e5a3536f68402d38b6644c0a69803f99527eb39ff9e738705d4aab77",
+  "command": [
+    "D:\\KS\\SemZadanie\\elearn\\performance-testing\\tools\\k6-v2.3.0-windows-amd64\\k6.exe",
+    "run",
+    "--out",
+    "json=D:\\KS\\SemZadanie\\elearn\\performance-testing\\results\\before\\load-1.ndjson",
+    "performance-testing/scripts/scenario.js"
+  ]
+}
