@@ -103,12 +103,20 @@ para('Kontroly používajú kópie databázy a reálny študentský login/CSRF; 
 page();heading('7 AFTER a kvantitatívne porovnanie')
 table(['Scenár','p95 BEFORE','p95 AFTER','Zníženie %','RPS B / A'],[[r['test'],f(row('before',r['test'])['p(95)']),f(r['p(95)']),f((row('before',r['test'])['p(95)']-r['p(95)'])/row('before',r['test'])['p(95)']*100),f(row('before',r['test'])['rps'],2)+' / '+f(r['rps'],2)] for r in rows if r['phase']=='after'],[75,95,95,85,105])
 chart('p95.png');chart('throughput.png')
-para('Zníženie latencie = (BEFORE − AFTER) / BEFORE × 100 %. Pri stress teste ostal p95 na hranici timeoutu: chyby klesli z 58,93 % na 21,36 %, ale prerušené iterácie vzrástli z 29 na 59. AFTER load mal 0 prerušených iterácií. Celkové percentily stress miešajú záťaže; úplné exporty zachovávajú aj tieto nepriaznivé výsledky.')
-page();heading('8 Splnenie požiadaviek a kritické zhodnotenie')
-table(['Požiadavka','BEFORE','AFTER'],req,[65,195,195]);chart('stress.png')
-para('PR-01/02 používajú dokončené požiadavky v stabilných 30 s oknách. Graf zahŕňa aj 10 s grace period, aby zobrazil neskoré timeouty; preto sa jeho hodnoty môžu líšiť od tabuľky. PR-03 BEFORE nie je spoľahlivo preukázaná pre prerušenia. PR-04 platí iba pre trojminútovú verziu. PR-05 hodnotí správnosť, nie rýchlosť.')
-para('Obmedzenia: lokálny generátor a server zdieľajú CPU; jeden PHP worker vytvára frontu; SQLite sa nemusí správať ako produkčná databáza; session učiteľa je spoločná. Nebola meraná latencia renderovania Vue, dlhodobá pamäť ani produkčná kapacita. Jedno opakovanie HTTP konfigurácie nestačí na štatisticky presný odhad variability.')
-para('Záver: merania umožnili vybrať úpravu podporenú profilom, zachovať funkčný výstup a oddeliť zlepšenie od splnenia požiadaviek. Aj výrazne rýchlejší kontrolér môže na jednovláknovom serveri nesplniť prísny limit pri desiatkach čakajúcich VUs. Ďalším krokom by bolo opakované meranie na produkčne podobnom serveri a plný soak.')
+para('Zníženie latencie = (BEFORE − AFTER) / BEFORE × 100 %. Pri stress teste ostal p95 na hranici timeoutu: chyby klesli z 58,93 % na 21,36 %, počet prerušených iterácií sa zmenil z 29 na 59. AFTER load mal 0 prerušených iterácií. Celkové percentily stress zahŕňajú rôzne záťaže; podrobné hodnoty jednotlivých behov sú zachované v exportoch.')
+page();heading('8 Dosiahnuté výsledky a zhodnotenie')
+measured=[
+ ['p95 pri 20 VUs (PR-01)']+[r.split(';')[0] for r in req[0][1:]],
+ ['p95 pri 50 VUs (PR-02)']+[r.split(';')[0] for r in req[1][1:]],
+ ['Load: chyby / prerušenia (PR-03)']+[f(row(ph,'load-3')['error']*100,2)+' % / '+str(row(ph,'load-3')['interrupted_iterations']) for ph in ['before','after']],
+ ['Soak: posledná / prvá tretina (PR-04)']+[f(ratios[ph],3)+'×' for ph in ['before','after']],
+ ['Počty: študenti / pokusy / posledné výsledky (PR-05)','1000 / 5000 / 1000','1000 / 5000 / 1000'],
+]
+table(['Ukazovateľ','BEFORE','AFTER'],measured,[175,140,140]);chart('stress.png')
+para('Tabuľka sumarizuje namerané hodnoty ukazovateľov definovaných v kapitole 2. Časy pri 20 a 50 VUs vychádzajú zo stabilných 30 s okien. Graf zahŕňa aj 10 s na dokončenie požiadaviek, preto sa jeho hodnoty môžu líšiť. Pomer tretín vyjadruje vývoj odozvy počas trojminútového testu stability.')
+para('Dosiahnuté prínosy: p95 celého load behu na LARGE sa znížil približne o 56 %. Po úprave tento beh zaznamenal 0 % chýb a 0 prerušených iterácií. Úplný výstup analytiky zostal zhodný vo všetkých troch kurzoch. Správnosť aplikácie podporuje 51 úspešných automatizovaných testov s 244 kontrolami.')
+para('Podmienky merania: server a generátor záťaže bežali na jednom počítači, s jedným PHP workerom, databázou SQLite a spoločnou session učiteľa. Každá konfigurácia mala jeden platný HTTP beh pred úpravou a po nej. Výsledky opisujú túto lokálnu konfiguráciu; stabilita bola sledovaná počas 180 sekúnd.')
+para('Záver: testovanie pomohlo identifikovať opakované spracovanie údajov, vybrať konkrétnu úpravu a zmerať jej účinok. Porovnanie pred úpravou a po nej preukázalo zrýchlenie pri zachovaní správnosti výsledkov. Projekt ukazuje praktický prínos výkonnostného testovania pri zlepšovaní aplikácie.')
 page()
 heading('Použité zdroje / Literatúra')
 sources=[
