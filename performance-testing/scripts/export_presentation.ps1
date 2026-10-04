@@ -14,4 +14,4 @@ try {
     } finally { $presentation.Close() }
 } finally { if (-not $hadPowerPoint) { $powerPoint.Quit() } }
 $deliveryRoot = Split-Path (Split-Path $performanceRoot -Parent) -Parent
-Copy-Item -LiteralPath $presentationPdf -Destination (Join-Path $deliveryRoot 'KS_Tema14_Prezentacia_Mykhailo_Adamenko_v2.pdf')
+Copy-Item -LiteralPath $presentationPdf -Destination (Join-Path $deliveryRoot 'KS_Tema14_Prezentacia_Mykhailo_Adamenko_v3.pdf')

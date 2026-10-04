@@ -26,7 +26,7 @@ with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED) as z:
 deliverables=[archive]
 for name in ['KS_Semestralny_projekt_Tema14_Mykhailo_Adamenko.pdf','KS_Tema14_Prezentacia_Mykhailo_Adamenko.pptx','KS_Tema14_Prezentacia_Mykhailo_Adamenko.pdf']:
     source=P/'documentation'/name;target=destination/name
-    target=target.with_name(target.stem+'_v2'+target.suffix)
+    target=target.with_name(target.stem+('_v3' if 'Prezentacia' in name else '_v2')+target.suffix)
     if not target.exists() or source.read_bytes()!=target.read_bytes():shutil.copy2(source,target)
     deliverables.append(target)
 manifest={p.name:{'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in deliverables}

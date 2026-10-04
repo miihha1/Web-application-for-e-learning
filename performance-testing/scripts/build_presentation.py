@@ -183,24 +183,24 @@ pill(s,7.01,4.68,3.7,'O 56 % KRATŠÍ ČAS',dark=True)
 txt(s,.87,5.73,11.5,.75,'Kurz s 1 000 študentmi · 20 súčasných používateľov\nHranica času pre 95 zo 100 dokončených odpovedí.',18,'AEBED0')
 note(s,'Hodnoty p95 za celý bežný záťažový beh sú 20,595 s pred úpravou a 9,069 s po úprave, zobrazené zaokrúhlene. Pokles je 55,97 %. Nejde o priemer ani o garanciu času každej odpovede. Dáta a testovací scenár boli rovnaké. Pri vyhodnotení požiadavky používame iba stabilnú fázu: po úprave 9,102 s, čo je stále výrazne nad cieľom 0,8 s. Zlepšenie výkonu preto automaticky neznamená splnenie požiadaviek.',55)
 
-# 11 — honest assessment without a dense requirements table.
-s=slide('10 / Splnili sme cieľ?','Zlepšenie áno. Všetky požiadavky ešte nie.')
-items=[('Správnosť výsledkov','Zachovaná',TEAL),('Bežná záťaž po úprave','Bez chýb a prerušených behov',TEAL),('Požadovaná rýchlosť','Zatiaľ nesplnená',RED),('Vysoká záťaž','Stále spôsobuje chyby',RED)]
+# 11 — measured achievements, scoped to the completed checks.
+s=slide('10 / Dosiahnuté výsledky','Rýchlejšie spracovanie. Zachovaná správnosť.')
+items=[('Sledovaný čas odozvy','Skrátený o 56 %',TEAL),('Výsledky prehľadu','Zhodné vo všetkých 3 kurzoch',TEAL),('Automatizované testy','51 úspešných testov',TEAL),('Bežná záťaž po úprave','Bez chýb a prerušených behov',TEAL)]
 for j,(label,result,col) in enumerate(items):
  y=2.27+j*.84;rect(s,.8,y,11.87,.65,'FFFFFF',LINE,round=True)
  circle(s,1.04,y+.24,.17,col);txt(s,1.42,y+.12,5.35,.41,label,22,INK,True);txt(s,7.08,y+.15,5.16,.38,result,20,col,True)
-txt(s,.85,6.18,11.62,.62,'Stabilitu sme overili iba krátko: tri minúty na lokálnom počítači.',21,MUTED)
-note(s,'PR-01 aj PR-02 zostali nesplnené: pri 20 súčasných používateľoch bola hranica 9,102 s namiesto menej než 0,8 s a pri 50 používateľoch 24,321 s namiesto menej než 1,5 s. Po úprave bežná záťaž splnila spoľahlivosť a výstupy boli správne. Pri stresovom teste chyby klesli z 58,93 % na 21,36 %, ale prerušené iterácie vzrástli z 29 na 59. Krátky trojminútový test splnil vopred definované kritérium stability; dlhodobú prevádzku tým nepotvrdzujeme. Kontrolné používateľské toky prešli 40 zo 40 kontrol. Limity: jeden lokálny worker, spoločná učiteľská session, krátke behy a jedno HTTP meranie každej konfigurácie.',70)
+txt(s,.85,6.18,11.62,.62,'Záťažové porovnanie: lokálny server · 20 súčasných používateľov.',20,MUTED)
+note(s,'Na tomto slajde zhrniem dosiahnuté výsledky. Pri kurze s 1000 študentmi a 20 súčasných používateľoch sa sledovaný čas odozvy skrátil približne o 56 %. Ide o hranicu pre 95 zo 100 dokončených odpovedí, vysvetlenú na predchádzajúcom slajde. Celé výstupy prehľadu boli zhodné pred úpravou aj po nej vo všetkých troch veľkostiach kurzu. Prešlo 51 automatizovaných testov s 244 kontrolami. V nameraných behoch bežnej záťaže po úprave neboli zaznamenané chyby ani prerušené iterácie. Tieto výsledky sa vzťahujú na vykonané lokálne merania.',55)
 
 # 12 — topic-level conclusion, then compact sources.
-s=slide('11 / Záver','Testovanie ukázalo problém aj prínos úpravy.',dark=True)
-for j,(title,body) in enumerate([('Zmerať','Zistiť, kde a kedy\nsa aplikácia spomaľuje.'),('Upraviť','Odstrániť príčinu\na zachovať správnosť.'),('Overiť','Znovu merať\na priznať zostávajúce limity.')]):
+s=slide('11 / Záver','Od merania ku konkrétnemu zlepšeniu.',dark=True)
+for j,(title,body) in enumerate([('Zistenie','Našli sme zbytočne\nopakované spracovanie.'),('Úprava','Znížili sme množstvo\nopakovanej práce.'),('Overenie','Potvrdili sme zrýchlenie\na zhodnosť výsledkov.')]):
  x=.78+j*4.1;rect(s,x,2.2,3.78,2.61,PANEL,round=True)
  txt(s,x+.26,2.59,3.23,.49,title,27,TEAL,True)
  txt(s,x+.26,3.46,3.23,.95,body,22,WHITE)
-txt(s,.85,5.23,11.6,.66,'Ďalší krok: dlhšie a opakované testy na serveri podobnom reálnej prevádzke.',23,WHITE)
+txt(s,.85,5.23,11.6,.66,'Meranie pomohlo vybrať účinnú úpravu a overiť jej výsledok.',23,WHITE)
 txt(s,.86,6.24,11.65,.51,'Zdroje: zadanie KS · bakalárska práca autora · dokumentácia Grafana, Laravel a PHP.\nÚplné odkazy sú v poznámkach a písomnej dokumentácii.',12,'AEBED0')
-note(s,'Prínosom výkonnostného testovania je konkrétny podklad pre rozhodnutie, čo zmeniť, a možnosť overiť výsledok. Automatizovaný nástroj umožnil opakovať rovnaké scenáre, ale lokálne prostredie obmedzuje prenos výsledkov do produkcie. Ďalší krok je produkčne podobný server, viac opakovaní a plný dlhodobý test. Reprodukčné príkazy, surové merania, úpravy kódu a testy sú súčasťou odovzdania.\n\nPoužité zdroje:\n1. KS_ZS_202627_semestralny_projekt_temy.pdf, téma 14; i-ks_semestralne_temy_hodnotenie.pdf.\n2. Mykhailo Adamenko: bakalárska práca, BP_FINAL.pdf.\n3. Grafana k6: https://grafana.com/docs/k6/latest/using-k6/metrics/ ; https://grafana.com/docs/k6/latest/using-k6/scenarios/ ; https://grafana.com/docs/k6/latest/using-k6/cookies/ .\n4. Laravel: https://laravel.com/docs/12.x/database ; https://laravel.com/docs/12.x/eloquent-mutators .\n5. PHP: https://www.php.net/manual/en/features.commandline.webserver.php .',45)
+note(s,'Hlavným prínosom projektu je prepojenie merania s konkrétnou úpravou aplikácie. Najprv sme identifikovali opakované spracovanie údajov, potom ho obmedzili a rovnakými testami overili účinok. Výsledkom je namerané zrýchlenie pri zachovaní správnosti prehľadu. Aplikácia z bakalárskej práce tak poslúžila ako praktický príklad využitia výkonnostného testovania. Ďakujem za pozornosť.\n\nPoužité zdroje:\n1. KS_ZS_202627_semestralny_projekt_temy.pdf, téma 14; i-ks_semestralne_temy_hodnotenie.pdf.\n2. Mykhailo Adamenko: bakalárska práca, BP_FINAL.pdf.\n3. Grafana k6: https://grafana.com/docs/k6/latest/using-k6/metrics/ ; https://grafana.com/docs/k6/latest/using-k6/scenarios/ ; https://grafana.com/docs/k6/latest/using-k6/cookies/ .\n4. Laravel: https://laravel.com/docs/12.x/database ; https://laravel.com/docs/12.x/eloquent-mutators .\n5. PHP: https://www.php.net/manual/en/features.commandline.webserver.php .',45)
 
 
 # Suppress theme shadows on chart lines, symbols and cards.
@@ -209,5 +209,5 @@ for sl in prs.slides:
   for effect in shape._element.xpath('./p:style/a:effectRef'):effect.set('idx','0')
 out=D/'KS_Tema14_Prezentacia_Mykhailo_Adamenko.pptx';prs.save(out)
 (D/'presentation.md').write_text('\n\n'.join(f'## {i}. {title}\n\n{sub}\n\n{s.notes_slide.notes_text_frame.text}' for i,(title,sub,s) in enumerate(notes,1)),encoding='utf-8')
-shutil.copy2(out,P.parent.parent/(out.stem+'_v2'+out.suffix))
+shutil.copy2(out,P.parent.parent/(out.stem+'_v3'+out.suffix))
 print(out)

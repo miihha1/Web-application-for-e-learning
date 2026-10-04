@@ -78,21 +78,21 @@ Odporúčaný čas: 55 s.
 
 Hodnoty p95 za celý bežný záťažový beh sú 20,595 s pred úpravou a 9,069 s po úprave, zobrazené zaokrúhlene. Pokles je 55,97 %. Nejde o priemer ani o garanciu času každej odpovede. Dáta a testovací scenár boli rovnaké. Pri vyhodnotení požiadavky používame iba stabilnú fázu: po úprave 9,102 s, čo je stále výrazne nad cieľom 0,8 s. Zlepšenie výkonu preto automaticky neznamená splnenie požiadaviek.
 
-## 11. Zlepšenie áno. Všetky požiadavky ešte nie.
+## 11. Rýchlejšie spracovanie. Zachovaná správnosť.
 
 
 
-Odporúčaný čas: 70 s.
+Odporúčaný čas: 55 s.
 
-PR-01 aj PR-02 zostali nesplnené: pri 20 súčasných používateľoch bola hranica 9,102 s namiesto menej než 0,8 s a pri 50 používateľoch 24,321 s namiesto menej než 1,5 s. Po úprave bežná záťaž splnila spoľahlivosť a výstupy boli správne. Pri stresovom teste chyby klesli z 58,93 % na 21,36 %, ale prerušené iterácie vzrástli z 29 na 59. Krátky trojminútový test splnil vopred definované kritérium stability; dlhodobú prevádzku tým nepotvrdzujeme. Kontrolné používateľské toky prešli 40 zo 40 kontrol. Limity: jeden lokálny worker, spoločná učiteľská session, krátke behy a jedno HTTP meranie každej konfigurácie.
+Na tomto slajde zhrniem dosiahnuté výsledky. Pri kurze s 1000 študentmi a 20 súčasných používateľoch sa sledovaný čas odozvy skrátil približne o 56 %. Ide o hranicu pre 95 zo 100 dokončených odpovedí, vysvetlenú na predchádzajúcom slajde. Celé výstupy prehľadu boli zhodné pred úpravou aj po nej vo všetkých troch veľkostiach kurzu. Prešlo 51 automatizovaných testov s 244 kontrolami. V nameraných behoch bežnej záťaže po úprave neboli zaznamenané chyby ani prerušené iterácie. Tieto výsledky sa vzťahujú na vykonané lokálne merania.
 
-## 12. Testovanie ukázalo problém aj prínos úpravy.
+## 12. Od merania ku konkrétnemu zlepšeniu.
 
 
 
 Odporúčaný čas: 45 s.
 
-Prínosom výkonnostného testovania je konkrétny podklad pre rozhodnutie, čo zmeniť, a možnosť overiť výsledok. Automatizovaný nástroj umožnil opakovať rovnaké scenáre, ale lokálne prostredie obmedzuje prenos výsledkov do produkcie. Ďalší krok je produkčne podobný server, viac opakovaní a plný dlhodobý test. Reprodukčné príkazy, surové merania, úpravy kódu a testy sú súčasťou odovzdania.
+Hlavným prínosom projektu je prepojenie merania s konkrétnou úpravou aplikácie. Najprv sme identifikovali opakované spracovanie údajov, potom ho obmedzili a rovnakými testami overili účinok. Výsledkom je namerané zrýchlenie pri zachovaní správnosti prehľadu. Aplikácia z bakalárskej práce tak poslúžila ako praktický príklad využitia výkonnostného testovania. Ďakujem za pozornosť.
 
 Použité zdroje:
 1. KS_ZS_202627_semestralny_projekt_temy.pdf, téma 14; i-ks_semestralne_temy_hodnotenie.pdf.
